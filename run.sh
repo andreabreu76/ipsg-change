@@ -1,0 +1,34 @@
+#!/bin/bash
+
+source $(pwd)/awsipchage.sh
+eval "git fetch && git pull"
+
+efetuaMudancaIp sg-0580d1f03723f080a 22 "SSH CASA ANDRE"
+efetuaMudancaIp sg-0580d1f03723f080a 80 "HTTP CASA ANDRE"
+efetuaMudancaIp sg-0580d1f03723f080a 3381 "PERSONALIZADO CASA ANDRE"
+
+# HOST DB
+efetuaMudancaIp sg-014f05ad4696925fb 80 "HTTP CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 22 "SSH CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 3306 "MYSQL CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 33061 "PERSONALIZADO CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 3381 "PERSONALIZADO CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 3308 "PERSONALIZADO CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 3383 "PERSONALIZADO CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 27017 "PERSONALIZADO CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 10050 "PERSONALIZADO CASA ANDRE"
+efetuaMudancaIp sg-014f05ad4696925fb 10051 "PERSONALIZADO CASA ANDRE"
+
+efetuaMudancaIp sg-08a0728ec742ef56c 80 "HTTP CASA ANDRE"
+
+efetuaMudancaIp sg-016fc859b92eb00f1 80 "HTTP CASA ANDRE"
+
+# V3-financeiro
+efetuaMudancaIp sg-01cf631b1c60eba43 80 "HTTP CASA ANDRE"
+efetuaMudancaIp sg-01cf631b1c60eba43 22 "SSH CASA ANDRE"
+efetuaMudancaIp sg-01cf631b1c60eba43 3381 "PERSONALIZADO CASA ANDRE"
+efetuaMudancaIp sg-01cf631b1c60eba43 3306 "MYSQL CASA ANDRE"
+
+efetuaMudancaIp sg-0e004a19eff7f84d6 22 "SSH CASA ANDRE"
+efetuaMudancaIp sg-0e004a19eff7f84d6 80 "HTTP CASA ANDRE"
+efetuaMudancaIp sg-0e004a19eff7f84d6 3383 "PERSONALIZADO CASA ANDRE"
